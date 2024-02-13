@@ -14,7 +14,7 @@ def create_app():
         },
         {
             "name": "OC Gallery",
-            "thumb": "img/ocGallery-thumb.png",
+            "thumb": "img/OCgallery-thumb.png",
             "hero": "img/ocGallery-hero.PNG",
             "categories": ["css", "html", "javascript"],
             "slug": "oc-gallery",
@@ -23,7 +23,7 @@ def create_app():
         {
             "name": "@methejax on Rufflr",
             "thumb": "img/methejax-thumb.png",
-            "hero": "img/methejax-hero.PNG",
+            "hero": "img/methejax-hero.png",
             "categories": ["css", "html"],
             "slug": "methejax",
             "prod": "https://shamiltonc.github.io/methejax/",
