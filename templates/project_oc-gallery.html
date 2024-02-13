@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="The front page of a website. Two women sit on the
+                beach looking out at the ocean. There is a seagull in the sky. 
+                There is a header."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                    <p>A gallery of photos I took during a trip back home in 2021. This was my
+                        second CSS/HTML project, which includes a little JavaScript.
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">CSS</li>
+                            <li class="technology-list__item">HTML</li>
+                            <li class="technology-list__item">JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View in production
+                    </a>
+                </section>
+            
+            </article>
+        </div>
+    </main>
+
+{% endblock %}
